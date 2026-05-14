@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistem UKT Unand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basecoat-css@0.3.11/dist/css/basecoat.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/basecoat-css@0.3.11/dist/js/all.min.js" defer></script>
+</head>
+<body class="login-body">
+
+    <div class="login-box card">
+        <div class="login-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_Unand.svg/1280px-Logo_Unand.svg.png" alt="Logo Universitas Andalas" style="width: 52px; display: block; margin-bottom: 14px;">
+            <p class="login-wordmark">Universitas Andalas</p>
+            <p class="login-subtitle">Sistem Permohonan Pengembalian UKT<br>Fakultas Teknologi Informasi</p>
+        </div>
+
+        <div id="errorMessage" class="alert alert-danger" style="display: none;"></div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="admin@unand.ac.id" required>
+            </div>
+
+            <label class="form-label" for="password">Password</label>
+            <div class="input-wrapper">
+                <input type="password" id="password" name="password" class="form-control" placeholder="••••••••" required>
+                <button type="button" id="togglePassword">
+                    <i id="toggleIcon" class="ph ph-eye"></i>
+                </button>
+            </div>
+
+            <button type="submit" class="login-btn mt-4">Login</button>
+        </form>
+    </div>
+
+    <script src="/javascripts/login.js"></script>
+</body>
+</html>
